@@ -127,6 +127,7 @@ function download(id, audio, title, ev) {
   let ytDlpEventEmitter = ytDlpWrap
     .exec([
       id,
+      `${audio ? '-x' : ''}`,
       "-S",
       "vcodec:h264,res,acodec:m4a",
       "-o",
