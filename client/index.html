@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Youtube downloader</title>
+  </head>
+  <body>
+    <div class="controls">
+      <input
+        id="search-bar"
+        name="Search"
+        placeholder="Search Youtube"
+        autofocus
+      />
+
+      <div>
+        <input type="checkbox" name="audio-only" id="audio-only" />
+        <label for="audio-only" style="font-size: small">Audio only</label>
+      </div>
+    </div>
+
+    <div id="search-results" class="container"></div>
+
+    <!-- 3) Add your script dependencies here, including CEP's CSInterface.js library -->
+
+    <style>
+      body {
+        color: rgb(255, 255, 255);
+        font-family: "Montserrat";
+        overflow-y: auto;
+      }
+
+      .controls {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        text-align: center;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        margin-top: 20px;
+      }
+
+      .result {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 10px; /* Adjust the radius as needed */
+      }
+
+      .result:hover {
+        background-color: darkgray;
+      
+      }
+
+      img {
+        width: 25%;
+        max-width: 125px;
+      }
+
+      .result-details {
+        display: flex;
+        gap: 5px;
+        flex-direction: column;
+      }
+    </style>
+
+    <script type="text/javascript" src="CSInterface.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
