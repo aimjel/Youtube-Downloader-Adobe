@@ -2,6 +2,8 @@
 
 Download NodeJS
 
+Install packacge dependencies ``npm install``
+
 Set the debug mode (https://github.com/Adobe-CEP/Getting-Started-guides/blob/master/Client-side%20Debugging/readme.md#set-the-debug-mode)
 
 Move the extension to your adobe extension folder
