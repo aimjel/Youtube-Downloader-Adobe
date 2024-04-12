@@ -1,8 +1,10 @@
 {
   "dependencies": {
-    "download": "^8.0.0",
     "download-github-release": "^0.3.2",
     "yt-dlp-wrap": "^2.3.12",
     "yt-search": "^2.10.4"
+  },
+  "scripts": {
+    "esbuild": "npx esbuild ./client/index.js --bundle --platform=node --outfile=./client/bundle.js"
   }
 }
